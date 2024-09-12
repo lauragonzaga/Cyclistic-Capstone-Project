@@ -15,15 +15,6 @@ end_lng VARCHAR(255),
 member_casual VARCHAR(255)
 );
 
-SELECT COUNT(*)
-FROM data202406
-WHERE MONTH(started_at) = 5;
-
-
-DELETE
-FROM data202406
-WHERE MONTH(started_at) = 5;
-
 
 INSERT INTO combined_data
 SELECT * FROM data202308
@@ -50,8 +41,13 @@ SELECT * FROM data202406
 UNION ALL
 SELECT * FROM data202407;
 
-SELECT *
+SELECT count(*)
 FROM combined_data;
+--  5,715,693 rows
+
+
+
+
 
 
 
