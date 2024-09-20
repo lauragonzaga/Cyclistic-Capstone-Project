@@ -1,4 +1,4 @@
-# Google Data Analytics Capstone Project: Cyclistic Bike-Share Case Study
+# Google Data Analytics: Cyclistic Bike-Share Case Study
 
 
 ## Introduction
