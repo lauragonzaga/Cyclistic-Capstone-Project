@@ -4,7 +4,7 @@
 ## Introduction 👋
 
 This project was created using all the skills I learned in the Google Data Analytics Professional Certificate.
-In order to answer the business question, I'm following all steps in the data analysis process: **Ask**, **Prepare**, **Process**, **Analyse**, **Share** and **Act**.
+In order to answer the business question, I'm following all steps in the data analysis process: **Ask**, **Prepare**, **Process**, **Analyse**, **Share** and **Act**.<br><br><br>
 
 
 
@@ -147,6 +147,7 @@ Then it was time to use the stations information. I decided to only show the mos
 | Travel for longer, but less frequently    | Travel for shorter time, but take more trips |
 | Prefer the warmer months    | Also travel more during summer months, but some still use the membership in colder months    |
 | Tend to use the bicycles for leisure or tourism | Tend to use the bikes to go to work or run errands |
+
 <br><br><br>
 
 
