@@ -41,9 +41,9 @@ Moreno has assigned you to answer the question: *How do annual members and casua
 
 ### The data
 
-I'm using the last 12-month available data from `[divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)` (August 2023 to July 2024). 
+I'm using the last 12-month available data from [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) (August 2023 to July 2024). 
 
-*(Note: The datasets have a different name because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and will enable you to answer the business questions. The data has been made available by Motivate International Inc. under this ´[license](https://divvybikes.com/data-license-agreement)´.
+*(Note: The datasets have a different name because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and will enable you to answer the business questions. The data has been made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement).
 
 
 
