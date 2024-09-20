@@ -82,12 +82,63 @@ Created a column indicating the day of the week of each trip for further analysi
 There were a lot a of rows with missing information on these columns: start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lng. A total of 1,397,330 null values, about 25% of the data.
 Since it was a big portion of the data and I don't know how crucial those columns would be in analysis, I flagged them creating a new column: incomplete_station_data. Any incomplete data now has a 1 value in this new column.
 
+After data cleaning, we now have 5,576,344 rows to analyse.
 
 
 
 ## Analyse
 
 [Data Analysis SQL Queries](https://github.com/lauragonzaga/Cyclistic-Capstone-Project/blob/main/4.%20Analysing%20the%20Data.sql) 
+
+Wrote some queries to find trends in the data. After that, I copied the resulting tables into Excel to save as a workbook for Tableau.
+
+
+## Share
+
+[Tableau Dashboard](https://public.tableau.com/app/profile/laura.gonzaga/viz/CyclisticBike-ShareCaseStudy_17267860907680/Dashboard1)
+
+
+First valuable information obtained was the total number of rides completed by members. As expected, the majority of rides were conducted by members.
+![image](https://github.com/user-attachments/assets/b834c1e0-886a-4f13-b29b-e2e8e983af3d)
+
+
+Then I calculated the average ride length for members and casuals. The result indicated members tend to take shorter trips. 
+![image](https://github.com/user-attachments/assets/f8ba5d2c-7eef-4ab2-8b95-89a902b3e6c3)
+
+
+Decided to see how this value changed over the year and discovered members' ride length mostly stays consistent throughout the year, while casuals tend to take longer trips during the summer season.
+![image](https://github.com/user-attachments/assets/f7a16b25-2d9e-4096-b3b1-beb095f4a204)
+
+
+I also had access to the time of day of each trip. So I extracted the hour and calculated the count of trips in each hour of the day. Realized members have two high peaks at 8AM and 17PM, indicating they are probably using the bicycles for transportation during work hours.
+![image](https://github.com/user-attachments/assets/ed6b45f9-8561-455a-bf77-b9ef823dd23a)
+
+
+Using the day of the week column created during the Process step, I discovered that members use the bicycles more often during work days while casuals tend to ride more during the weekend
+![image](https://github.com/user-attachments/assets/ee324447-5d0d-48a0-a08f-1193174d4578)
+
+
+I extracted the month from the started_at column and had a big discovery. There is a clear season effect in the usage of bicycles, especially for casual members. 
+![image](https://github.com/user-attachments/assets/0c93ccea-539b-43e3-a1a5-be7d6a2ac4c0)
+
+
+I created a calculated field on Tableau that let me make this graph, separating the months in seasons. This indicated very clearly that the warmer months are a lot more profitable to the company.
+![image](https://github.com/user-attachments/assets/85fce43e-39cd-4ac5-acb9-27ed612f3b50)
+
+
+Then it was time to use the stations information. I decided to only show the most popular stations for casual users, since these are the ones we are trying to target. The result shows that the top stations for casuals are in busy places, with access to tourist attractions and/or located near Lake Michigan.
+![image](https://github.com/user-attachments/assets/9b29c665-f53a-4cfb-a074-a987a6fae980)
+
+
+
+### Conclusions
+
+| Casuals  | Members   |
+|------------|------------|
+| Tend to ride on weekends    | Tend to ride on week days and during work hours  |
+| Travel for longer, but less frequently    | Travel for shorter time, but take more trips |
+| Prefer the warmer months    | Also travel more during summer months, but some still use the membership in colder months    |
+| Tend to use the bicycles for leisure or tourism | Tend to use the bikes to go to work or run errands |
 
 
 
