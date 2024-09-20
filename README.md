@@ -14,14 +14,14 @@ In order to answer the business question, I'm following all steps in the data an
 
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago, IL. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
-Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as **casual riders**. Customers who purchase annual memberships are **Cyclistic members**.<br><br><br>
+Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as **casual riders**. Customers who purchase annual memberships are **Cyclistic members**.<br>
 
 
 ### The problem
 
 Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a solid opportunity to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs.
 
-The director of marketing, Lily Moreno, has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the team needs to better understand **how annual members and casual riders differ**, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+The director of marketing, Lily Moreno, has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the team needs to better understand **how annual members and casual riders differ**, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.<br>
 
 ### Scenario
 
@@ -50,7 +50,7 @@ I'm using the last 12-month available data from [divvy-tripdata](https://divvy-t
 This is public data that you can use to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit you from using riders’ personally identifiable information. This means that you won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes*
 
 
-There are 12 tables each containing information for a specific month. The columns are: ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
+There are 12 tables each containing information for a specific month. The columns are: ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.<br><br><br>
 
 
 ## Process 🖥️
@@ -82,7 +82,7 @@ Created a column indicating the day of the week of each trip for further analysi
 There were a lot a of rows with missing information on these columns: start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lng. A total of 1,397,330 null values, about 25% of the data.
 Since it was a big portion of the data and I don't know how crucial those columns would be in analysis, I flagged them creating a new column: incomplete_station_data. Any incomplete data now has a 1 value in this new column.
 
-After data cleaning, we now have 5,576,344 rows to analyse.
+After data cleaning, we now have 5,576,344 rows to analyse.<br><br><br>
 
 
 
@@ -90,7 +90,7 @@ After data cleaning, we now have 5,576,344 rows to analyse.
 
 [Data Analysis SQL Queries](https://github.com/lauragonzaga/Cyclistic-Capstone-Project/blob/main/4.%20Analysing%20the%20Data.sql) 
 
-Wrote some queries to find trends in the data. After that, I copied the resulting tables into Excel to save as a workbook for Tableau.
+Wrote some queries to find trends in the data. After that, I copied the resulting tables into Excel to save as a workbook for Tableau.<br><br><br>
 
 
 ## Share 📊📈
@@ -135,7 +135,7 @@ I created a calculated field on Tableau that let me make this graph, separating 
 
 Then it was time to use the stations information. I decided to only show the most popular stations for casual users, since these are the ones we are trying to target. The result shows that the top stations for casuals are in busy places, with access to tourist attractions and/or located near Lake Michigan.
 
-![image](https://github.com/user-attachments/assets/9b29c665-f53a-4cfb-a074-a987a6fae980)
+![image](https://github.com/user-attachments/assets/9b29c665-f53a-4cfb-a074-a987a6fae980)<br><br><br>
 
 
 
@@ -147,6 +147,7 @@ Then it was time to use the stations information. I decided to only show the mos
 | Travel for longer, but less frequently    | Travel for shorter time, but take more trips |
 | Prefer the warmer months    | Also travel more during summer months, but some still use the membership in colder months    |
 | Tend to use the bicycles for leisure or tourism | Tend to use the bikes to go to work or run errands |
+<br><br><br>
 
 
 
