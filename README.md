@@ -1,14 +1,14 @@
-# Google Data Analytics: Cyclistic Bike-Share Case Study
+# Google Data Analytics: Cyclistic Bike-Share Case Study 🚲
 
 
-## Introduction
+## Introduction 👋
 
 This project was created using all the skills I learned in the Google Data Analytics Professional Certificate.
 In order to answer the business question, I'm following all steps in the data analysis process: **Ask**, **Prepare**, **Process**, **Analyse**, **Share** and **Act**.
 
 
 
-## Context
+## Context 📜
 
 ### Cyclistic
 
@@ -32,7 +32,7 @@ But first, Cyclistic executives must approve your recommendations, so they must 
 
 
 
-## Ask
+## Ask ❓
 
 ### Business Task
 
@@ -40,7 +40,7 @@ Moreno has assigned you to answer the question: *How do annual members and casua
 
 
 
-## Prepare
+## Prepare 🔍
 
 ### The data
 
@@ -53,7 +53,7 @@ This is public data that you can use to explore how different customer types are
 There are 12 tables each containing information for a specific month. The columns are: ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
 
 
-## Process
+## Process 🖥️
 
 ### Combining the data
 
@@ -86,14 +86,14 @@ After data cleaning, we now have 5,576,344 rows to analyse.
 
 
 
-## Analyse
+## Analyse 👩‍💻
 
 [Data Analysis SQL Queries](https://github.com/lauragonzaga/Cyclistic-Capstone-Project/blob/main/4.%20Analysing%20the%20Data.sql) 
 
 Wrote some queries to find trends in the data. After that, I copied the resulting tables into Excel to save as a workbook for Tableau.
 
 
-## Share
+## Share 📊📈
 
 [Tableau Dashboard](https://public.tableau.com/app/profile/laura.gonzaga/viz/CyclisticBike-ShareCaseStudy_17267860907680/Dashboard1)
 
@@ -139,7 +139,7 @@ Then it was time to use the stations information. I decided to only show the mos
 
 
 
-### Conclusions
+### Conclusions ✅
 
 | Casuals  | Members   |
 |------------|------------|
@@ -150,7 +150,7 @@ Then it was time to use the stations information. I decided to only show the mos
 
 
 
-## Act
+## Act 🗣
 
 Top 3 recommendations based on my analysis:
 
